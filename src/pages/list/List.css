@@ -1,0 +1,133 @@
+.listContainer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Roboto" , sans-serif;
+}
+
+.listWrapper
+{
+    width: 100%;
+    max-width:1024px ;
+    display: flex;
+    gap: 20px;
+}
+.listSearch
+{
+    flex: 1;
+    background-color: #E0CCBE;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+
+}
+
+.lsTitle
+{
+    font-size: 35px;
+    color: grey;
+    margin-bottom: 10px;
+    left:100px;
+    font-family: "Roboto" , sans-serif;
+}
+
+.lsItem
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-family: "Roboto" , sans-serif;
+}
+
+.listSearchItem>label
+{
+    font-size: 15px;
+}
+.listSearchItem>input
+{
+    height: 28px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.lsOptionItem
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: grey;
+    font-size: small;
+}
+
+.lsOptionInput
+{
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.lsOptions
+{
+    padding: 10px;
+}
+
+.listSearchItem>span{
+    height: 30px;
+    padding: 5px;
+    /* margin-top: 10px; */
+    background-color: white;
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.listResult
+{
+    flex: 3;
+}
+
+.listSearch>button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:  0 0 10px rgba( 0 ,0,0,0.1);
+    margin:10px;
+    margin-top: 40px;
+    -webkit-transition-duration : 0.3s;
+    transition-duration: 0.3s; 
+    -webkit-transition-property: box-shadow , transform;
+    transition-property: box-shadow , transform;
+}
+
+.listSearch>button:active,.listSearch>button:focus,.listSearch>button:hover
+{
+    box-shadow: 0 0 20px rgba( 0 ,0,0,0.5);
+    -webkit-transform : scale(1.1);
+    transform: scale(1.1);
+
+}
